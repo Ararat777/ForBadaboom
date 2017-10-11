@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Clitch Account</title>
+    <link rel="stylesheet" href="css/libs.min.css">
+    <link rel="stylesheet" href="css/account.css">
+    <link rel="stylesheet" href="http://evm237.com/clitch_account/css/font-awesome.min.css">  
+</head>
+<body>
+	<div class="admin-panel clearfix">
+	    <div class="slidebar">
+	    	<h1><a href="account.html#"><img src="img/logo.png" alt="logo" class="logo_main"><img src="img/logo_mini.png" alt="logo" class="logo_mini"></a></h1>
+	        <ul>
+	            <li><a href="" name="tab1"><i class="fa fa-credit-card-alt"></i><span>Token sale</span></a></li>
+	            <li><a href="" name="tab2"><i class="fa fa-exchange"></i><span>Withdraw NFT</span></a></li>
+	            <li><a href="" name="tab3"><i class="fa fa-handshake-o"></i><span>Bounty</span></a></li>
+	            <li><a href="" name="tab4"><i class="fa fa-user-circle"></i><span>My account settings</span></a></li>
+	            <li><a href="" name="tab5"><i class="fa fa-info-circle"></i><span>FAQ</span></a></li>
+	        </ul>
+	    </div>
+	  	<div class="content">
+	  		<div class="top-line">
+	  			<!-- <div class="nav_wrap">
+	  				<span class="nav"></span>
+	  			</div> -->
+	  			<p class="user">UserName</p>
+	  			<p class="amount">You have <span>0</span> CLT</p>
+	  			<button><span>log out</span></button>
+	  			<ul class="language-select"> 
+					<li data-lang="ru">ru  <i class='fa fa-angle-down'></i></li>
+			    	<li class="active" data-lang="en">en  <i class='fa fa-angle-down'></i></li>
+				</ul>
+	  		</div>
+	  		<div class="main">
+		        <div id="tab1" class="tab">
+		        	<h2 class="header">Token sale</h2>
+		        	<div class="alert alert-danger">
+                    	<p><i class="fa fa-exclamation"></i> Please verify your identity by submiting identification documents.</p>
+                	</div>
+                	<div class="alert alert-success">
+	                    <p><i class="fa fa-bolt"></i> Crowdfunding stage: <strong>Sales stage #3</strong>,
+	                    current CLT price: <strong>0.0001200</strong> Bitcoin</p>
+                	</div>
+                	<div id="countdown" class="alert alert-info">
+            			<p><i class="fa fa-clock-o"></i> Price increases to 0.000130 Bitcoin in
+                        <span id="footer_timer" class="ico-time">03 days 14 hours 54 minutes 36 seconds</span></p>
+        			</div>
+			        <div class="calc">
+			        	<h3>Purchase CLT</h3>
+			        	<div class="dashboard_form">
+						<div class="amount">
+							<div class="amount_wrap">
+								<!-- <div class="selectric"> -->
+								<input type="text" name="ETH" id="amount_ETH_to_buy" value="10000" class="box_qty_form_input" placeholder="">
+								<!-- </div> -->
+								<!-- <input class="selectric_input" tabindex="0" placeholder=""> -->
+							</div>
+							<p class="box_qty_me">AMOUNT</p>
+			            </div>
+			            <div class="box_select">
+								<div class="selectric_wrapper selectric_open">
+									<div class="selectric_hide_select">
+										<select name="s" tabindex="-1">
+											<option value="BTC" class="val_in inbtc">7.5472 BTC</option>
+											<option value="LTC" class="val_in inltc">476.1905 LTC</option>
+											<option value="ETH" class="val_in ineth">89.6861 ETH</option>
+											<option value="DASH" class="val_in indash">108.6956 DASH</option>
+											<option value="BTC" class="val_in inbtc">5000 USD</option>
+										</select>
+									</div>
+									<div class="selectric">
+										<span class="label">ETH</span>
+										<b class="button">▾</b>
+									</div>
+									<div class="selectric_items" tabindex="-1">
+										<div class="selectric_scroll">
+											<ul>
+												<li data-index="0" class="val_in inbtc selected highlighted"> BTC</li>
+												<li data-index="1" class="val_in inltc"> LTC</li>
+												<li data-index="2" class="val_in ineth"> ETH</li>
+												<li data-index="3" class="val_in indash last"> DASH</li>
+												<li data-index="0" class="val_in inusd selected highlighted"> USD</li>
+											</ul>
+										</div>
+									</div>
+									<input class="selectric_input" tabindex="0" placeholder="">
+								</div>
+								<p >CHOOSE CURRENCY</p>
+			            	</div>
+			            <div class="box_qty">
+							<div class="box_qty_form">
+								<input type="text" name="q" id="amount_NFT_to_buy" value="10000" class="box_qty_form_input" placeholder="">
+								<div class="box_qty_form_btn">
+										<a href="account.html#" data-control="plus" class="qty_up box_qty__plus"></a>
+										<a href="account.html#" data-control="minus" class="qty_down box_qty__minus"></a>
+								</div>
+							</div>
+							<p>1 CLT = <span class="curs">0.0008 BTC</span></p>
+						</div>
+			       		<button>BUY</button>
+					</div>
+					</div>
+					<div class="key">
+						<form method="POST" action="">
+	 						<label for="key">Copy this key:</label>
+							<input id="key" type="text" name="key" value="key" readonly>
+						</form>
+					</div>
+					<div class="transaction">
+						<h3>Your purchase order (PO) transaction status</h3>
+						<table>
+							<!-- <caption>Your purchase order (PO) transaction status</caption> -->
+							<thead>
+								<tr>
+								    <th>PO Creation time</th>
+								    <th>To Clitch Presale Wallet</th>
+								    <th>Purchase Amount</th>
+								    <th>Currency</th>
+								    <th>Calculated CLT</th>
+								    <th>Tx Status</th>
+								</tr>
+							</thead>
+							<tr>
+							    <td data-th="PO Creation time">2017-08-08 08:29:29</td>
+							    <td data-th="To Clitch Presale Wallet">123123123123123</td>
+							    <td data-th="Purchase Amount">55.00000</td>
+							    <td data-th="Currency">Ether</td>
+							    <td data-th="Calculated CLT">33786</td>
+							    <td data-th="Tx Status">PENDING</td>
+							</tr>
+							<tr>
+							    <td data-th="PO Creation time">2017-08-04 07:55:22</td>
+							    <td data-th="To Clitch Presale Wallet"></td>
+							    <td data-th="Purchase Amount">0.12000</td>
+							    <td data-th="Currency">Bitcoin</td>
+							    <td data-th="Calculated CLT">1000</td>
+							    <td data-th="Tx Status">CANCELED</td>
+							</tr>
+							<tr>
+							    <td data-th="PO Creation time">2017-08-08 08:29:29</td>
+							    <td data-th="To Clitch Presale Wallet">123123123123123</td>
+							    <td data-th="Purchase Amount">55.00000</td>
+							    <td data-th="Currency">Ether</td>
+							    <td data-th="Calculated CLT">33786</td>
+							    <td data-th="Tx Status">PENDING</td>
+							</tr>
+						</table>
+					</div>
+		        	<div class="statistics">
+		        		<h3>CLT Statistics</h3>
+		        		<div class="counters">
+  							<div class="counter">
+  								<i class="fa fa-line-chart fa-3x"> </i><p class="number">5000/10000</p>
+    							<p class="title">Received / Cap</p>
+  							</div>
+  							<div class="counter">
+  								<i class="fa fa-database fa-3x"> </i><p class="number">777777</p>
+    							<p class="title">Total tokens purchased</p>
+  							</div>
+  							<div class="counter">
+  								<i class="fa fa-clock-o fa-3x"> </i><p class="number"><span id="timer"></span></p>
+    							<p class="title">Price increases after</p>
+  							</div>
+						</div>
+		        	</div>
+		        </div>
+		        <div id="tab2" class="tab">
+		        	<h2 class="header">Withdraw CLT</h2>
+		        	<div class="alert alert-danger">
+                    	<p><i class="fa fa-exclamation"></i> Please verify your identity by submiting identification documents.</p>
+                	</div>
+                	<div class="alert alert-success">
+	                    <p><i class="fa fa-bolt"></i> Crowdfunding stage: <strong>Sales stage #3</strong>,
+	                    current CLT price: <strong>0.0001200</strong> Bitcoin</p>
+                	</div>
+                	<div id="countdown" class="alert alert-info">
+            			<p><i class="fa fa-clock-o"></i> Price increases to 0.000130 Bitcoin in
+                        <span id="footer_timer" class="ico-time">03 days 14 hours 54 minutes 36 seconds</span></p>
+        			</div>
+        			<div class="withdraw">
+        				<p class="balance">Your Balance: <span id="spanCLT">0</span> CLT</p>
+        				<div class="wrap_form">
+        					<form method="POST" action="">
+	 							<div class="address">
+	 								<label for="address">Enter your Ethereum wallet address</label>
+									<input id="address" type="text" name="address" value="" placeholder="0x000000000000000">
+	 							</div>
+								<div class="amount">
+									<label for="amount">Amount you want to withdraw</label>
+									<input id="amount" type="number" name="amount" value="0.00000"><span>Clt</span>
+								</div>
+								<div class="form_transaction">
+									<label for="transaction">Transaction Free in CLT</label>
+									<input id="transaction" type="number" name="amount" value="0.00000020369855" disabled>
+								</div>
+							</form>
+							<p><i class="fa fa-info-circle"></i>  CLT tokens will be available for withdrawal a short period after the token sale closes</p>
+        				</div>
+        			</div>
+		        </div>
+		        <div id="tab3" class="tab">
+		        	<h2 class="header">Bounty programm</h2>
+		        	<div class="alert alert-danger">
+                    	<p><i class="fa fa-exclamation"></i> Please verify your identity by submiting identification documents.</p>
+                	</div>
+                	<div class="alert alert-success">
+	                    <p><i class="fa fa-bolt"></i> Crowdfunding stage: <strong>Sales stage #3</strong>,
+	                    current NFT price: <strong>0.0001200</strong> Bitcoin</p>
+                	</div>
+                	<div id="countdown" class="alert alert-info">
+            			<p><i class="fa fa-clock-o"></i> Price increases to 0.000130 Bitcoin in
+                        <span id="footer_timer" class="ico-time">03 days 14 hours 54 minutes 36 seconds</span></p>
+        			</div>
+        			<div class="bounty">
+        				<form method="POST" action="">
+							<input id="link" type="text" name="link" value="" placeholder="Enter your link">
+							<button>Send</button>
+						</form>
+        			</div>
+        			<div class="bounty_table">
+						<table>
+							<caption>Caption for bounty</caption>
+							<thead>
+								<tr>
+								    <th>Link</th>
+								    <th>Date</th>
+								</tr>
+							</thead>
+							<tr>
+							    <td data-th="Link">https://www.google.com</td>
+							    <td data-th="Date">2017-08-08 08:29:29</td>
+							</tr>
+							<tr>
+							    <td data-th="Link">https://www.google.com</td>
+							    <td data-th="Date">2017-08-08 08:29:29</td>
+							</tr>
+							<tr>
+							    <td data-th="Link">https://www.google.com</td>
+							    <td data-th="Date">2017-08-08 08:29:29</td>
+							</tr>
+						</table>
+					</div>
+		        </div>
+		        <div id="tab4" class="tab">
+		        	<h2 class="header">My account settings</h2>
+		        	<div class="alert alert-danger">
+                    	<p><i class="fa fa-exclamation"></i> Please verify your identity by submiting identification documents.</p>
+                	</div>
+                	<div class="alert alert-success">
+	                    <p><i class="fa fa-bolt"></i> Crowdfunding stage: <strong>Sales stage #3</strong>,
+	                    current CLT price: <strong>0.0001200</strong> Bitcoin</p>
+                	</div>
+                	<div id="countdown" class="alert alert-info">
+            			<p><i class="fa fa-clock-o"></i> Price increases to 0.000130 Bitcoin in
+                        <span id="footer_timer" class="ico-time">03 days 14 hours 54 minutes 36 seconds</span></p>
+        			</div>
+		     		<div class="settings_container clearfix">
+<!-- 
+						<canvas id="x-canvas"></canvas> -->
+
+						<input id="set1" type="radio" name="tabs" checked>
+						<label for="set1" class="set"><i class="fa fa-id-card-o"></i><span>Profile</span></label>
+
+						<input id="set2" type="radio" name="tabs">
+						<label for="set2" class="set"><i class="fa fa-key"></i><span>Security</span></label>
+
+						<input id="set3" type="radio" name="tabs">
+						<label for="set3" class="set"><i class="fa fa-unlock-alt"></i><span>2-step auth</span></label>
+
+						<section id="content1" class="settings-content">
+							<h3>Your Profile</h3>
+					      	<form method="POST" action="" class="clearfix">
+								<div class="field-wrap">
+			              			<input type="text" name="name" required/>
+			              			<label data-placeholder="First Name"></label>
+			            		</div>
+			            		<div class="field-wrap">
+			              			<input type="text" name="lastname" required/>
+			              			<label data-placeholder="Last Name"></label>
+			            		</div>
+								<div class="field-wrap">
+			            			<input type="email" name="email" required/>
+			            			<label data-placeholder="Email"></label>
+			          			</div>
+								<div class="field-wrap">
+			            			<input type="tel" class="phonefield" name="phone" required/>
+									<label data-placeholder="Phone"></label>
+			          			</div>
+		            			<button>Save Information</button>
+                    		</form>
+						</section>
+
+						<section id="content2" class="settings-content">
+							<h3>Change Password</h3>
+					      	<form method="POST" action="" class="clearfix">
+								<div class="field-wrap">
+			              			<input type="password" name="pass" required/>
+			              			<label data-placeholder="Old Password"></label>
+		            			</div>
+		            			<div class="field-wrap">
+			              			<input type="password" name="pass" required/>
+			              			<label data-placeholder="New Password"></label>
+		            			</div>
+		            			<div class="field-wrap">
+			              			<input type="password" name="pass" required/>
+			              			<label data-placeholder="Confirm Password"></label>
+		            			</div>
+		            			<button>Change Password</button>
+                    		</form>
+						</section>
+
+						<section id="content3" class="settings-content">
+							<h3>Two Step Auth</h3>
+					      	<form method="POST" action="" class="clearfix">
+								<div class="field-wrap">
+			              			<input type="tel" name="phone" required class="phonefield"/>
+			              			<label data-placeholder="Phone number"></label>
+		            			</div>
+		            			<button>Get SMS code</button>
+						</section>
+					</div>
+		        </div>
+		        <div id="tab5" class="tab">
+		        	<h2 class="header">FAQ</h2>
+		        	<ul>
+						<li>
+							<div class="item"><p>Вопрос по проекту, вопрос по токенам, вопрос по инвестициям?</p></div>
+							<div class="hint text_light"><p>Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.</p></div>
+						</li>
+						<li>
+							<div class="item"><p>Вопрос по проекту, вопрос по токенам, вопрос по инвестициям?</p></div>
+							<div class="hint text_light"><p>Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.</p></div>
+						</li>
+						<li>
+							<div class="item"><p>Вопрос по проекту, вопрос по токенам, вопрос по инвестициям?</p></div>
+							<div class="hint text_light"><p>Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.</p></div>
+						</li>
+						<li>
+							<div class="item"><p>Вопрос по проекту, вопрос по токенам, вопрос по инвестициям?</p></div>
+							<div class="hint text_light"><p>Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.</p></div>
+						</li>
+					</ul>
+		        </div>    
+	    	</div>
+	    	<footer class="clearfix">
+	    		<a href="account.html#">Terms and Conditions</a>
+	    		<p>&copy; Clitch, 2017</p>
+	    	</footer>
+	  	</div>
+	</div>
+	<script src="js/libs.min.js"></script>
+	<script src="js/jquery.maskedinput.min.js"></script>
+	<script src="js/calc.js"></script>
+	<script src="js/account.js"></script>
+</body>
+</html>

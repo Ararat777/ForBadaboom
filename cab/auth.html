@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Clitch Account</title>
+    <link rel="stylesheet" href="css/libs.min.css">
+    <link rel="stylesheet" href="css/auth.css">
+</head>
+<body>
+	<div id="large-header" class="large-header">
+     	<h1><a href="auth.html#"><img src="img/logo.png" alt="logo"></a></h1>
+     	<canvas id="x-canvas"></canvas>
+     	<div class="form">
+	      	<ul class="tab-group clearfix">
+		        <li class="tab active"><a href="auth.html#signup">Регистрация</a></li>
+		        <li class="tab"><a href="auth.html#login">Авторизация</a></li>
+	      	</ul>
+	      
+	     	<div class="tab-content">
+	        	<div id="signup">   
+	          		<h2>Создать аккаунт</h2>
+	          		<div class="error"><p>Error</p></div>
+	          		<form action="" method="POST">          
+	            		<div class="field-wrap">
+	              			<label>
+	                			Имя<span class="req">*</span>
+	              			</label>
+	              			<input type="text"  name="name" required/>
+	            		</div>
+	            		<div class="field-wrap">
+	              			<label>
+	                			Фамилия<span class="req">*</span>
+	              			</label>
+	              			<input type="text" name="lastname" required/>
+	            		</div>
+						<div class="field-wrap">
+	            			<label>
+	              				Email<span class="req">*</span>
+	            			</label>
+	            			<input type="email" name="email" required/>
+	          			</div>
+						<div class="field-wrap">
+	            			<label>
+	              				Пароль<span class="req">*</span>
+	            			</label>
+	            			<input type="password" name="pass" required/>
+	          			</div>
+	          			<div class="field-wrap">
+	            			<input id="check" type="checkbox" name="checkbox" class="check">
+	            			<label for="check" class="terms"><span class="icon"></span> Принять </label>
+	            			<a href="http://evm237.com/clitch_account/pdf/white_paper.pdf" target="_blank">условия продажи токенов</a>					
+	          			</div>
+	          			<button class="button button-block"/>Зарегистрироваться</button>
+	          		</form>
+	        	</div>
+	        	<div id="login">   
+	          		<h2>Вход в личный кабинет</h2>
+	          		<div class="error"><p>Error</p></div>
+					<form action="" method="POST">
+						<div class="field-wrap">
+	            			<label>
+	              				Email<span class="req">*</span>
+	            			</label>
+	            			<input type="email" name="email" required/>
+	          			</div>
+						<div class="field-wrap">
+	            			<label>
+	              				Пароль<span class="req">*</span>
+	            			</label>
+	            			<input type="password" name="pass" required/>
+	          			</div>
+	          			<p class="forgot"><a href="auth.html#">Забыли пароль?</a></p>
+	          			<button class="button button-block"/>Войти</button>
+	          		</form>
+	        	</div>
+	    	</div>
+    	</div>  
+	</div>	
+	<script src="js/libs.min.js"></script>
+	<script src="js/auth.js"></script>
+</body>
+</html>
